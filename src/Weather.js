@@ -45,11 +45,11 @@ export default function Weather() {
               <img src={weatherData.img} alt="" id="icon" class="float-left" />
               <strong id="tempNow">{weatherData.temperature}</strong>
               <span className="units">
-                <a href="#" id="celcius" className="active">
+                <a href=" " id="celcius" className="active">
                   ºC
                 </a>{" "}
                 |
-                <a href="#" className="fahrenheit" id="fahrenheit">
+                <a href=" " className="fahrenheit" id="fahrenheit">
                   ºF
                 </a>
               </span>
@@ -75,6 +75,7 @@ export default function Weather() {
         <a
           href="https://github.com/JessKco/Vanilla-Weather-app"
           target="_blank"
+          rel="noreferrer"
         >
           Open sourced code
         </a>
