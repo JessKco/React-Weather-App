@@ -3,11 +3,12 @@ import ReactDOM from "react-dom";
 import "./styles.css";
 import Weather from "./Weather";
 
+
 function App() {
   return (
     <div className="App">
       <div id="app-container">
-        <Weather />
+        <Weather defaultCity="London"/>
       </div>
     </div>
   );
