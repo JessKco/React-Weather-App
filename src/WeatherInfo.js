@@ -17,20 +17,22 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row">
         <div className="col-6">
-          <div className="clearfix weather-temperature">
-            <div className="float-left">
+          <span className="clearfix weather-temperature">
+            <span className="float-left">
               <WeatherIcon
                 code={props.data.icon}
+                size={50}
                 alt={props.data.description}
               />
-            </div>
+            </span>
             <WeatherTemperature celsius={props.data.temperature} />
-          </div>
+          </span>
         </div>
         <div className="col-6">
           <ul>
             <li className="feels">
-              Feels like: <span id="feels-like">{props.data.feels}</span>ºC
+              Feels like:{" "}
+              <span id="feels-like">{Math.round(props.data.feels)}</span>ºC
             </li>
             <li className="feels">
               Humidity: <span id="humidity">{props.data.humidity}</span>%
@@ -42,16 +44,6 @@ export default function WeatherInfo(props) {
         </div>
       </div>
       <div className="weatherForecast" id="forecast"></div>
-      <div className="me">
-        <a
-          href="https://github.com/JessKco/Vanilla-Weather-app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open sourced code
-        </a>
-        by Jess Corbett
-      </div>
     </div>
   );
 }
