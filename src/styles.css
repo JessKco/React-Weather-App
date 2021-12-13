@@ -97,7 +97,7 @@ li {
 .btn {
   background-color: rgb(151, 30, 238);
   border: 1px solid rgb(151, 30, 238);
-  color: rgb(151, 30, 238);
+  color: white;
   box-shadow: 3px 5px 3px rgb(230, 230, 230);
 }
 
