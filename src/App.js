@@ -11,7 +11,7 @@ function App() {
       </div>
       <div className="me">
         <a
-          href="https://github.com/JessKco/Vanilla-Weather-app"
+          href="https://github.com/JessKco/React-Weather-App"
           target="_blank"
           rel="noreferrer"
         >
